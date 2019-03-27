@@ -1,13 +1,21 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React  from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import './App.scss';
+import Landing from './components/Landing/Landing'
 
+// import logo from './logo.svg';
 
-class App extends Component {
+// const FuckingFour = () => <h1>404</h1>
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-      <h1>My amazing App</h1>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+     
+            <Route exact path='/' component={Landing} />
+        
+        </div>
+      </BrowserRouter>
     );
   }
 }
