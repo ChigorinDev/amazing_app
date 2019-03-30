@@ -1,13 +1,17 @@
 import React from 'react';
 import './Landing.scss';
 import SideBar from '../SideBar/SideBar';
+import { Container, Col } from 'react-bootstrap';
 
-class Landing extends React.Component { 
-    render() { 
+
+class Landing extends React.Component {
+    render() {
         return (
-            <div fluid className="landing-wrapper">
+            <Container fluid="true" className="landing-wrapper">
+                <Col md={4} lg={2}>
                 <SideBar />
-            </div>
+                </Col>
+            </Container>
         );
     }
 }
