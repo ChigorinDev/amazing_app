@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
+import './UtilScss/Utilities.scss';
 import './App.scss';
 import Landing from './components/Landing/Landing';
 import Affairs from './components/Affairs/Affairs';

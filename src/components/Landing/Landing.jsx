@@ -8,7 +8,7 @@ class Landing extends React.Component {
     render() {
         return (
             <Container fluid="true" className="landing-wrapper">
-                <Col md={4} lg={2}>
+                <Col md={4} lg={2} className="sidebar-wrapper">
                 <SideBar />
                 </Col>
             </Container>
