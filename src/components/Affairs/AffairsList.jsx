@@ -1,24 +1,28 @@
-import React  from 'react';
-import { Table } from 'react-bootstrap';
+import React from 'react';
+import { MdDeleteSweep } from "react-icons/md";
 
 
-const AffairsList = ({ affairs }) => {
- //const { affairs } = props 
+
+const AffairsList = ({ affairs, deleteAffair }) => {
+//  const { affairs } = props 
   const affairsList = affairs.map(affair => { 
     return (
-      <div key={affair.id}>
-        <div>Нужно сделать: {affair.affair}</div>
-        <div>Время: {affair.time}</div>
-        <div>Приоритет: {affair.priority}</div>
-      </div>
+      <tr key={affair.id}>
+        <td className="affair-text">{affair.affair}</td>
+        <td>{affair.time}</td>
+        <td>{affair.priority}</td>
+        <td>
+          <MdDeleteSweep className="delete-affair-btn" onClick={() => { deleteAffair(affair.id) }}/>
+        </td>
+      </tr>
     );
   });
   
   
   return (
-    <div>
+    <tbody>
       {affairsList}
-    </div>
+    </tbody>
   );
 
 }
