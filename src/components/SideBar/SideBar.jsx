@@ -11,22 +11,22 @@ class SideBar extends React.Component {
         <Nav className="sidebar-nav">
           <Link className="sidebar-nav__link"  to="/">
             <MdHome className="icon-white" />
-            Главная
+            Home
           </Link>
 
           <Link className="sidebar-nav__link" to="/affairs">
             <MdList className="icon-white" />
-            Список покупок
+            Affairs
           </Link>
 
           <Link className="sidebar-nav__link" to="/guests">
             <MdPeople className="icon-white" />
-            Гости
+            Guests
           </Link>
 
           <Link className="sidebar-nav__link" to="/budget">
             <MdAttachMoney className="icon-white" />
-            Бюджет
+            Budget
           </Link>
         </Nav>
       </div>

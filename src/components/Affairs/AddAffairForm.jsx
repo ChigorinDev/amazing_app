@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import { Form, Button } from "react-bootstrap";
 
-class AddAffair extends Component {
+class AddAffairForm extends React.Component {
   state = {
     affair: null,
     time: null,
@@ -19,8 +19,9 @@ class AddAffair extends Component {
     this.props.addAffair(this.state);
     console.log(this.state);
   }
-
   render() {
+    
+    console.log(this.props);
     return (
       <Form onSubmit={this.handleSubmit}>
         <Form.Group>
@@ -61,4 +62,4 @@ class AddAffair extends Component {
   }
 }
 
-export default AddAffair;
+export default AddAffairForm;

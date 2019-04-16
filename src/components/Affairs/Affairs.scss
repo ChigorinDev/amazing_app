@@ -1,10 +1,37 @@
 .affairs-row {
   margin: 0;
 }
-.affairs-container{
-  display: flex;
-  justify-content: center;
-  margin: 0 ;
-  color: #fff;
-  border: 1px solid;
+.affairs-container {
+  margin: 10rem auto 0;
+  width: 100%;
+  max-width: 60rem;
+  padding: 2rem 1rem;
+  color: #fff !important;
+  height: fit-content;
+  background: rgba(#fff, .2);
+  border-radius: 3px;
+
+  .table {
+    color: #fff;
+  }
+
+}
+.affair-text {
+  max-width: 15rem;
+}
+
+.add-affair-btn {
+ margin: 0 auto;
+ width: 10rem;
+}
+
+.delete-affair-btn {
+  cursor: pointer;
+  width: 2rem;
+  height: 1.4rem;
+  transition: color .2s;
+
+  &:hover {
+    color: red;
+  }
 }
